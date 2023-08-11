@@ -1,0 +1,48 @@
+// TodoTemplate.scss
+
+// 기존 css
+// .TodoTemplate
+// .TodoTemplate > .app-title
+
+// scss 작성법
+
+$background-color: #22b8cf; //자주 쓰는 코드 변수로 지정 가능
+
+
+.TodoTemplate{
+  width: 512px;
+  margin: 6rem auto;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .app-title{
+    background: $background-color;
+    color: #fff;
+    height: 4rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content{
+    background: #fff;
+  }
+}
+
+/*
+
+body 기본 글씨 크기: 16px, 1em, 100%
+html{font-size:18px}
+	div{font-size:12px}
+	div>p{font-size:24px}
+	div>p>a{font-size:1em} - 24px
+
+	div> div{font-size:24px}
+	div > div > a{font-size:1rem} - 18px
+
+1em == 기분이 부모 100%
+1rem == 기준이 html
+
+*/
+
